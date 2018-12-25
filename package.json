@@ -9,7 +9,7 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "trash dist dist-bundle && npm run build:main",
-    "build:main": "tsc -p tsconfig.json",
+    "build:main": "tsc tsconfig.json",
     "tslint": "tslint -c tslint.json \"src/**/*.ts\" \"tests/**/*.ts\"",
     "tslint:fix": "tslint -c tslint.json --fix semicolon,comma,no-var-keyword,ordered-imports \"src/**/*.ts\" \"tests/**/*.ts\"",
     "pretest": "npm run build:main",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "buttplug": "^0.10.0",
-    "buttplug-node-bluetoothle-manager": "https://github.com/th317erd/buttplug-node-bluetoothle-manager.git",
+    "buttplug-node-bluetoothle-manager": "https://github.com/legendaire/buttplug-node-bluetoothle-manager.git",
     "commander": "^2.19.0",
     "selfsigned": "^1.10.4",
     "ws": "^6.1.2"
