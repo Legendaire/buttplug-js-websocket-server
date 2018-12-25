@@ -9,7 +9,7 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "trash dist dist-bundle && npm run build:main",
-    "build:main": "tsc tsconfig.json",
+    "build:main": "tsc -p tsconfig.json",
     "tslint": "tslint -c tslint.json \"src/**/*.ts\" \"tests/**/*.ts\"",
     "tslint:fix": "tslint -c tslint.json --fix semicolon,comma,no-var-keyword,ordered-imports \"src/**/*.ts\" \"tests/**/*.ts\"",
     "pretest": "npm run build:main",
