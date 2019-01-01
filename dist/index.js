@@ -106,8 +106,10 @@ function main() {
                     bs = new buttplug_1.ButtplugServer();
                     bs.AddDeviceManager(new buttplug_node_bluetoothle_manager_1.ButtplugNodeBluetoothLEDeviceManager());
                     wsServer.on("connection", function connection(client) {
+						console.log("wsServer.on(connection)");
                         var _this = this;
                         client.on("message", function (message) { return __awaiter(_this, void 0, void 0, function () {
+							console.log("client.on(message)");
                             var msg, _i, msg_1, m, outgoing;
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
