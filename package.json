@@ -24,8 +24,10 @@
     "buttplug-node-bluetoothle-manager": "https://github.com/legendaire/buttplug-node-bluetoothle-manager.git",
     "commander": "^2.19.0",
     "selfsigned": "^1.10.4",
-    "ws": "^6.1.2"
-  },
+    "ws": "^6.1.2",
+    "trash-cli": "^1.4.0",
+    "typescript": "^3.2.2"
+},
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/commander": "^2.12.2",
